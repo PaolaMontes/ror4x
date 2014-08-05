@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :engineers
+
   resources :people
 
   resources :names

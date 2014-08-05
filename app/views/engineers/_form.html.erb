@@ -1,0 +1,14 @@
+<%= simple_form_for(@engineer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :fullname %>
+    <%= f.input :dependency %>
+    <%= f.input :studies %>
+    <%= f.association :person %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
