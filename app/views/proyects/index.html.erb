@@ -18,6 +18,7 @@
         <td><%= proyect.description %></td>
         <td><%= proyect.begindate %></td>
         <td><%= proyect.enddate %></td>
+        <td><%= link_to 'Equipo',proyect_engineers_path(proyect) %></td>
         <td><%= link_to 'Show', proyect %></td>
         <td><%= link_to 'Edit', edit_proyect_path(proyect) %></td>
         <td><%= link_to 'Destroy', proyect, method: :delete, data: { confirm: 'Are you sure?' } %></td>
