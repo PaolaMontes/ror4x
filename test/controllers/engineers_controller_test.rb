@@ -18,7 +18,7 @@ class EngineersControllerTest < ActionController::TestCase
 
   test "should create engineer" do
     assert_difference('Engineer.count') do
-      post :create, engineer: { dependency: @engineer.dependency, fullname: @engineer.fullname, person_id: @engineer.person_id, studies: @engineer.studies }
+      post :create, engineer: { dependency: @engineer.dependency, fullname: @engineer.fullname, proyect_id: @engineer.proyect_id, studies: @engineer.studies }
     end
 
     assert_redirected_to engineer_path(assigns(:engineer))
@@ -35,7 +35,7 @@ class EngineersControllerTest < ActionController::TestCase
   end
 
   test "should update engineer" do
-    patch :update, id: @engineer, engineer: { dependency: @engineer.dependency, fullname: @engineer.fullname, person_id: @engineer.person_id, studies: @engineer.studies }
+    patch :update, id: @engineer, engineer: { dependency: @engineer.dependency, fullname: @engineer.fullname, proyect_id: @engineer.proyect_id, studies: @engineer.studies }
     assert_redirected_to engineer_path(assigns(:engineer))
   end
 

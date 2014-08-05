@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :proyects
-
   resources :engineers
+
+  resources :proyects
 # esta es una relacion de uno a muchos
 
   resources :proyects do

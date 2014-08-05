@@ -11,20 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140805183054) do
+ActiveRecord::Schema.define(version: 20140805191958) do
 
   create_table "engineers", force: true do |t|
     t.string   "fullname"
     t.string   "dependency"
     t.string   "studies"
-    t.integer  "person_id"
+    t.integer  "proyect_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "engineers", ["person_id"], name: "index_engineers_on_person_id"
+  add_index "engineers", ["proyect_id"], name: "index_engineers_on_proyect_id"
 
-  create_table "people", force: true do |t|
+  create_table "proyects", force: true do |t|
     t.string   "name"
     t.string   "description"
     t.date     "begindate"

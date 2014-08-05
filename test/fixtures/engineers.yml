@@ -4,10 +4,10 @@ one:
   fullname: MyString
   dependency: MyString
   studies: MyString
-  person_id: 
+  proyect_id: 
 
 two:
   fullname: MyString
   dependency: MyString
   studies: MyString
-  person_id: 
+  proyect_id: 
