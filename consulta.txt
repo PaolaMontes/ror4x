@@ -1,0 +1,17 @@
+     Prefix Verb   URI Pattern                Controller#Action
+     people GET    /people(.:format)          people#index
+            POST   /people(.:format)          people#create
+ new_person GET    /people/new(.:format)      people#new
+edit_person GET    /people/:id/edit(.:format) people#edit
+     person GET    /people/:id(.:format)      people#show
+            PATCH  /people/:id(.:format)      people#update
+            PUT    /people/:id(.:format)      people#update
+            DELETE /people/:id(.:format)      people#destroy
+      names GET    /names(.:format)           names#index
+            POST   /names(.:format)           names#create
+   new_name GET    /names/new(.:format)       names#new
+  edit_name GET    /names/:id/edit(.:format)  names#edit
+       name GET    /names/:id(.:format)       names#show
+            PATCH  /names/:id(.:format)       names#update
+            PUT    /names/:id(.:format)       names#update
+            DELETE /names/:id(.:format)       names#destroy
