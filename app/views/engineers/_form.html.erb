@@ -1,4 +1,4 @@
-<%= simple_form_for(@engineer) do |f| %>
+<%= simple_form_for[@proyect,@engineer] do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -9,6 +9,9 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit,:class => 'btn-primary'%>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+              proyect_engineers_path(@proyect), :class => 'btn' %>
   </div>
+
 <% end %>
