@@ -17,11 +17,11 @@
         <td><%= engineer.fullname %></td>
         <td><%= engineer.dependency %></td>
         <td><%= engineer.studies %></td>
-        <td><%= engineer.proyect %></td>
+        <td><%= engineer.proyect.name %></td>
     
-        <%= link_to t('.Edit',:default  => t("helpers.links.edit")),edit_engineer_path(engineer), :class => 'btn btn-primary' %>
+        <%= link_to t('.Edit',:default  => t("helpers.links.edit")),edit_proyect_engineer_path(@proyect,engineer), :class => 'btn btn-danger' %>
        
-       <%= link_to t('.Destroy',:default  => t("helpers.links.destroy")),engineer_path(engineer), :method => :delete,:data => {:confirm => t('.confirm',:default => t('helpers.links.confirm', :default =>'Are you sure?'))},:class => 'btn btn-primary' %>
+       <%= link_to t('.destroy',:default  => t("helpers.links.destroy")),proyect_engineer_path(@proyect,engineer), :method => :delete,:data => {:confirm => t('.confirm',:default => t("helpers.links.confirm", :default =>'Are you sure?'))},:class => 'btn btn-danger' %>
       </tr>
     <% end %>
   </tbody>

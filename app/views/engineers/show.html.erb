@@ -20,5 +20,6 @@
   <%= @engineer.proyect %>
 </p>
 
-<%= link_to 'Edit', edit_engineer_path(@engineer) %> |
-<%= link_to 'Back', engineers_path %>
+<%= link_to t('.Edit',:default  => t("helpers.links.edit")),edit_engineer_path(engineer), :class => 'btn btn-primary' %> |
+
+<%= link_to t('.Back',:default  => t("helpers.links.back")),engineer_path(engineer), :class => 'btn btn-primary'
